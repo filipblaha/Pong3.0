@@ -143,10 +143,10 @@
     <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\Pong---git\Hra Pong\profil0.xml" />
-    <Xml Include="..\..\Pong---git\Hra Pong\profil1.xml" />
-    <Xml Include="..\..\Pong---git\Hra Pong\profil2.xml" />
-    <Xml Include="..\..\Pong---git\Hra Pong\profil_vyber.xml" />
+    <Xml Include="profil0.xml" />
+    <Xml Include="profil1.xml" />
+    <Xml Include="profil2.xml" />
+    <Xml Include="proifil_vyber.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
