@@ -1,27 +1,14 @@
+#pragma once
 #include <iostream>
 #include <Windows.h>
-#ifndef WIN32_LEAN_AND_MEAN // xml a windows.h nejdou do sebe, tohle to vyresi
-#define WIN32_LEAN_AND_MEAN
-#endif
 #include <fcntl.h>
 #include <io.h>
-#pragma once
+
 class Commands
 {
 public:
 
-	void prechod()
-	{
-		setCursorPosition(0, 0);
-		for (int j = 0; j < 20; j++)
-		{
-			for (int i = 0; i < 40; i++)
-			{
-				std::wcout << " ";
-			}
-			std::wcout << "\n";
-		}
-	}
+	void prechod();
 	void setCursorPosition(int x, int y)
 	{
 		static const HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -54,5 +41,4 @@ public:
 	}
 
 private:
-
 };

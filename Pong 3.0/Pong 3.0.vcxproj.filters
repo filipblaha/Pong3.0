@@ -30,6 +30,18 @@
     <ClCompile Include="Plosina.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="profil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu_profil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu_hlavni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
@@ -53,15 +65,15 @@
     <ClInclude Include="Commands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Menu_profil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu_hlavni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="profil0.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
-    <Xml Include="profil1.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
-    <Xml Include="profil2.xml">
+    <Xml Include="profily.xml">
       <Filter>Resource Files</Filter>
     </Xml>
     <Xml Include="profil_vyber.xml">

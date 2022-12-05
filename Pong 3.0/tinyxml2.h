@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TINYXML2_INCLUDED
 #define TINYXML2_INCLUDED
 

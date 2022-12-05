@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f4a3bad8-41e1-4a61-8f27-b876d8ff51fd}</ProjectGuid>
-    <RootNamespace>Pong30</RootNamespace>
+    <ProjectGuid>{312d2292-3a46-405c-92e8-53252a4bd533}</ProjectGuid>
+    <RootNamespace>bordel</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,30 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Menu_hlavni.cpp" />
-    <ClCompile Include="Menu_profil.cpp" />
-    <ClCompile Include="Pong 3.0.cpp" />
-    <ClCompile Include="profil.cpp" />
-    <ClCompile Include="Profily.cpp" />
-    <ClCompile Include="Plosina.cpp" />
-    <ClCompile Include="Commands.cpp" />
-    <ClCompile Include="tinyxml2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Commands.h" />
-    <ClInclude Include="Hraci_pole.h" />
-    <ClInclude Include="Menu_hlavni.h" />
-    <ClInclude Include="Menu_profil.h" />
-    <ClInclude Include="Objekt.h" />
-    <ClInclude Include="Plosina.h" />
-    <ClInclude Include="Profily.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="tinyxml2.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="profily.xml" />
-    <Xml Include="profil_vyber.xml" />
+    <ClCompile Include="bordel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

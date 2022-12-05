@@ -12,84 +12,78 @@
 #include <fcntl.h>
 #include <io.h> // graficke knihovny
 
+#include "Menu_profil.h"
+#include "Menu_hlavni.h"
 #include "Menu.h"
 //#include "Pong.h"
 
-enum menu_strana
+bool menu_hlavni()
 {
-	start,
-	profil,
-	hlavni,
-	herni_mody,
-	vzhled_plosiny,
-	nastaveni,
-	ovladani,
-};
-
-void menu_hlavni()
-{
-
-}
-void menu_profil()
-{
-	Menu vyber_profil(profil, 10, 8, 8, 17);
-
-	bool jazyk_profil = vyber_profil.jazyk; // odstran
-
-
-	while (!vyber_profil.exit)
+	Menu hlavni_menu();
+	return 0;
+	/*while (!profil.exit)
 	{
-		vyber_profil.vykresleni_oznaceni();
-		while (!_kbhit());
-		vyber_profil.vstup_menu(profil);
-		vyber_profil.smazani_oznaceni();
+	}*/
+}
+bool menu_profil()
+{
+	Menu_profil profil;
 
-		if (vyber_profil.enter || vyber_profil.del)
+	bool jazyk_profil = profil.jazyk; // odstran
+
+	while(1)
+	{
+		switch (profil.vstup_menu(profil.profil_e))
 		{
-			if (vyber_profil.del)
+		case profil.enter:
+		{
 			{
-				vyber_profil.vykresleni_otazka();
-				while (!_kbhit());
-				vyber_profil.vstup_menu(profil);
-				vyber_profil.smazani_otazka();
-			}
-			if (vyber_profil.rozhodovac(profil) == 1)
-			{
-				if (vyber_profil.enter)
+				if (profil.rozhodovac(profil.profil_e, profil.enter) == 1)
 				{
-					if (vyber_profil.pouzit == 0)
+					while (menu_hlavni())
 					{
-						if (jazyk_profil != vyber_profil.jazyk)
-							vyber_profil.jazyk = jazyk_profil;
-
-						vyber_profil.vykresleni_nazev_profilu();
-						vyber_profil.nacteni_vyberu_profilu();
-						vyber_profil.pojmenovani_profilu();
-						vyber_profil.ulozeni_vyberu_profilu();
-					}
-					while (vyber_profil.program)
-					{
-						menu_hlavni();
-						vyber_profil.ukladani_profilu();
-						vyber_profil.ulozeni_vyberu_profilu(); // je potreba?
-						vyber_profil.exit = 1;
+						profil.ukladani_profilu();
 					}
 				}
 			}
-			else
+			break;
+		}
+		case profil.del:
+		{
 			{
-				vyber_profil.exit = 1;
+				profil.vykresleni_otazka();
+				while (!_kbhit()); // ?
+
+				if (profil.vstup_menu(profil.profil_e) == profil.enter)
+				{
+					profil.rozhodovac(profil.profil_e, profil.del);
+
+					if (profil.pouzit == 0)
+					{
+						profil.vykresleni_nazev_profilu();
+						profil.nacteni_vyberu_profilu();
+						profil.pojmenovani_profilu();
+						profil.ulozeni_vyberu_profilu();
+					}
+				}
+				profil.smazani_otazka();
 			}
-			vyber_profil.ulozeni_vyberu_profilu();
+			break;
+		}
+		case profil.exit:
+		{
+			return 0;
+		}
+		default:
+		{
+			profil.vykresleni_oznaceni();
+		}
+		break;
 		}
 	}
 }
 
 int main()
 {
-	Menu zacatek(start);
-	while (zacatek.program)
-	{
-		menu_profil();
-	}
+	while (menu_profil());
 }

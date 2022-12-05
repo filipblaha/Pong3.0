@@ -1,3 +1,4 @@
+#pragma once
 #include "Hraci_pole.h"
 class Plosina
 {
