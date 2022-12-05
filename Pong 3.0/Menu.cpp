@@ -241,3 +241,14 @@ int Menu::vstup_menu(int strana)
 		break;
 	}
 }
+//int Menu::rozhodovac(int strana, int prikaz)
+//{
+//	////////    Profily     ////////
+//	if (strana == 0)
+//	{
+//		if (oznaceni.at(1) == 8)
+//		{
+//
+//		}
+//	}
+//}

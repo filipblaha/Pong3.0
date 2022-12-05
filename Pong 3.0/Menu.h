@@ -64,6 +64,11 @@ public:
 		enter,
 		del,
 	};
+	enum jazyk
+	{
+		CZ,
+		EN,
+	};
 
 	std::vector<int> zavory;
 	std::vector<int> oznaceni;
@@ -74,8 +79,12 @@ public:
 	void smazani_oznaceni();
 
 
+	/////////////////////    Input     //////////////////////////
 	int vstup_menu(int strana);
-	void vykresleni_otazka();
+	int rozhodovac(int strana, int prikaz);
+
+
+	//void vykresleni_otazka();
 	void smazani_otazka();
 
 

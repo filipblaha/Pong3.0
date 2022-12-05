@@ -1,6 +1,7 @@
 #include "Menu.h"
 #include "Menu_profil.h"
 #include "Profily.h"
+#include "Preklad.h"
 
 #include <iostream>
 #include <vector>
@@ -57,8 +58,8 @@
 //}
 int main()
 {
-	/*while (menu_profil);*/
-	std::vector<int> testint1 = { 1, 5, 3, 66, 5 };
+	//while (menu_profil);
+	/*std::vector<int> testint1 = { 1, 5, 3, 66, 5 };
 	std::vector<int> testint2 = { 8, 4, 6, 11, 4 , 18 };
 	std::vector<int> testint3 = { 8, 2, 6, 11, 5 , 11 };
 	std::vector<std::vector<int>> testint = {testint1, testint2, testint3};
@@ -84,7 +85,7 @@ int main()
 	testchar.push_back(b);
 	testchar.push_back(c);
 	Profily save;
-	save.vytvoreni_noveho_profilu(testint, testchar);
+	save.ulozeni_profilu(testint, testchar);
 
 	std::vector<std::vector<int>> prosim = save.nacteni_dat_profilu();
 	for (size_t j = 0; j < prosim.size(); j++)
@@ -103,5 +104,15 @@ int main()
 			std::cout << prosim2.at(j).at(i);
 		}
 		std::cout << '\n';
+	}*/
+
+	Preklad trans;
+	Menu m;
+	trans.nacteni_textu_profil(m.CZ);
+	
+	for (size_t i = 0; i < trans.vektor_stringu.size(); i++)
+	{
+		std::cout << trans.vektor_stringu.at(i) << '\n';
 	}
+
 }

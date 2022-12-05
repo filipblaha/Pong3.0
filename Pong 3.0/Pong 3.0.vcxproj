@@ -131,6 +131,7 @@
     <ClCompile Include="Menu_hlavni.cpp" />
     <ClCompile Include="Menu_profil.cpp" />
     <ClCompile Include="Pong 3.0.cpp" />
+    <ClCompile Include="Preklad.cpp" />
     <ClCompile Include="profil.cpp" />
     <ClCompile Include="Profily.cpp" />
     <ClCompile Include="Plosina.cpp" />
@@ -144,13 +145,14 @@
     <ClInclude Include="Menu_profil.h" />
     <ClInclude Include="Objekt.h" />
     <ClInclude Include="Plosina.h" />
+    <ClInclude Include="Preklad.h" />
     <ClInclude Include="Profily.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="profily.xml" />
-    <Xml Include="profil_vyber.xml" />
+    <Xml Include="Preklad.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

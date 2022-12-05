@@ -1,7 +1,7 @@
 #include "Profily.h"
 
 XMLDocument xmlDoc;
-int Profily::vytvoreni_noveho_profilu(std::vector<std::vector<int>> data_profil, std::vector< std::vector<char>> nazev_profil)
+int Profily::ulozeni_profilu(std::vector<std::vector<int>> data_profil, std::vector< std::vector<char>> nazev_profil)
 {
 	XMLNode* root = xmlDoc.NewElement("root");
 	xmlDoc.InsertFirstChild(root);

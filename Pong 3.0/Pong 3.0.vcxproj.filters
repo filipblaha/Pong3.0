@@ -42,6 +42,9 @@
     <ClCompile Include="Commands.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Preklad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h">
@@ -71,12 +74,15 @@
     <ClInclude Include="Menu_hlavni.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Preklad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="profily.xml">
       <Filter>Resource Files</Filter>
     </Xml>
-    <Xml Include="profil_vyber.xml">
+    <Xml Include="Preklad.xml">
       <Filter>Resource Files</Filter>
     </Xml>
   </ItemGroup>
