@@ -17,7 +17,6 @@ public:
 	int konec_kola_stringu = 0;
 
 	std::vector<std::string> vektor_stringu;
-	std::vector<int> vektor_poctu_stringu;
 
 	std::vector<std::string> nacteni_textu_profil(int jazyk);
 	std::vector<std::string> nacteni_textu_hlavni(int jazyk);

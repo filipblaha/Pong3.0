@@ -108,7 +108,7 @@ int main()
 
 	Preklad trans;
 	Menu m;
-	trans.nacteni_textu_profil(m.EN);
+	trans.nacteni_textu_hlavni(m.EN);
 	
 	for (size_t i = 0; i < trans.vektor_stringu.size(); i++)
 	{

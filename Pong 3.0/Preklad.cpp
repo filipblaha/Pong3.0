@@ -17,6 +17,8 @@ std::vector<std::string> Preklad::nacteni_textu_profil(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
+	std::vector<int> vektor_poctu_stringu;
+
 	xmlDoc.LoadFile("Preklad.xml");
 
 	XMLNode* root = xmlDoc.FirstChild();
@@ -42,7 +44,7 @@ std::vector<std::string> Preklad::nacteni_textu_profil(int v_jazyk)
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_hlavni(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_hlavni(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
@@ -51,7 +53,7 @@ std::vector<std::string> nacteni_textu_hlavni(int jazyk)
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("hlavni");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -71,7 +73,7 @@ std::vector<std::string> nacteni_textu_hlavni(int jazyk)
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_herni_mody(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_herni_mody(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
@@ -80,7 +82,7 @@ std::vector<std::string> nacteni_textu_herni_mody(int jazyk)
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("herni_mody");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -93,14 +95,14 @@ std::vector<std::string> nacteni_textu_herni_mody(int jazyk)
 	for (int i = 0; i < profil_stringu; i++)
 	{
 		const char* data = nullptr;
-		data = text->Attribute("profil");
+		data = text->Attribute("herni_mody");
 		std::string sdata = data;
 		vektor_stringu.push_back(sdata);
 		text = text->NextSiblingElement("Menu");
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_vzhled_plosiny(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_vzhled_plosiny(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
@@ -109,7 +111,7 @@ std::vector<std::string> nacteni_textu_vzhled_plosiny(int jazyk)
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("vzhled_plosiny");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -122,14 +124,14 @@ std::vector<std::string> nacteni_textu_vzhled_plosiny(int jazyk)
 	for (int i = 0; i < profil_stringu; i++)
 	{
 		const char* data = nullptr;
-		data = text->Attribute("profil");
+		data = text->Attribute("vzhled_plosiny");
 		std::string sdata = data;
 		vektor_stringu.push_back(sdata);
 		text = text->NextSiblingElement("Menu");
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_nastaveni(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_nastaveni(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
@@ -138,7 +140,7 @@ std::vector<std::string> nacteni_textu_nastaveni(int jazyk)
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("nastaveni");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -151,25 +153,25 @@ std::vector<std::string> nacteni_textu_nastaveni(int jazyk)
 	for (int i = 0; i < profil_stringu; i++)
 	{
 		const char* data = nullptr;
-		data = text->Attribute("profil");
+		data = text->Attribute("nastaveni");
 		std::string sdata = data;
 		vektor_stringu.push_back(sdata);
 		text = text->NextSiblingElement("Menu");
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_ovladani(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_ovladani(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
-	
+
 
 	xmlDoc.LoadFile("Preklad.xml");
 
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("ovladani");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -182,25 +184,25 @@ std::vector<std::string> nacteni_textu_ovladani(int jazyk)
 	for (int i = 0; i < profil_stringu; i++)
 	{
 		const char* data = nullptr;
-		data = text->Attribute("profil");
+		data = text->Attribute("ovladani");
 		std::string sdata = data;
 		vektor_stringu.push_back(sdata);
 		text = text->NextSiblingElement("Menu");
 	}
 	return vektor_stringu;
 }
-std::vector<std::string> nacteni_textu_konec_kola(int jazyk)
+std::vector<std::string> Preklad::nacteni_textu_konec_kola(int v_jazyk)
 {
 	XMLDocument xmlDoc;
 
-	
+
 
 	xmlDoc.LoadFile("Preklad.xml");
 
 	XMLNode* root = xmlDoc.FirstChild();
 	XMLElement* base = root->FirstChildElement("zaklad");
 
-	XMLElement* profil = base->FirstChildElement("profil");
+	XMLElement* profil = base->FirstChildElement("konec");
 	profil->QueryIntText(&profil_stringu);
 
 	XMLElement* jazyk = root->FirstChildElement("CZ");
@@ -213,7 +215,7 @@ std::vector<std::string> nacteni_textu_konec_kola(int jazyk)
 	for (int i = 0; i < profil_stringu; i++)
 	{
 		const char* data = nullptr;
-		data = text->Attribute("profil");
+		data = text->Attribute("konec");
 		std::string sdata = data;
 		vektor_stringu.push_back(sdata);
 		text = text->NextSiblingElement("Menu");
