@@ -13,13 +13,9 @@
 	XMLElement* konec_kola = base->FirstChildElement("konec_kola");
 	profil->QueryIntText(&konec_kola_stringu);*/
 
-std::vector<const char*> Preklad::nacteni_textu_profil(int v_jazyk)
+std::vector<std::string> Preklad::nacteni_textu_profil(int v_jazyk)
 {
 	XMLDocument xmlDoc;
-
-	std::vector<int> vektor_poctu_stringu;
-
-	std::vector<const char*> vektor_stringu;
 
 	xmlDoc.LoadFile("Preklad.xml");
 
@@ -29,20 +25,198 @@ std::vector<const char*> Preklad::nacteni_textu_profil(int v_jazyk)
 	XMLElement* profil = base->FirstChildElement("profil");
 	profil->QueryIntText(&profil_stringu);
 
-	XMLElement* jazyk = root->FirstChildElement("CZ");;
+	XMLElement* jazyk = root->FirstChildElement("CZ");
 	if (v_jazyk == 0)
 		jazyk = root->FirstChildElement("CZ");
 	if (v_jazyk == 1)
 		jazyk = root->FirstChildElement("EN");
 
+	XMLElement* text = jazyk->FirstChildElement("Menu");
 	for (int i = 0; i < profil_stringu; i++)
 	{
-		XMLElement* text = jazyk->FirstChildElement("p0");
-		const char* data;
-		text->QueryAttribute("data", &data); //tady sem seklej
-		vektor_stringu.push_back(data);
-		text = text->NextSiblingElement("p0");
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
 	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_hlavni(int jazyk)
+{
+	XMLDocument xmlDoc;
 
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("hlavni");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_herni_mody(int jazyk)
+{
+	XMLDocument xmlDoc;
+
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_vzhled_plosiny(int jazyk)
+{
+	XMLDocument xmlDoc;
+
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_nastaveni(int jazyk)
+{
+	XMLDocument xmlDoc;
+
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_ovladani(int jazyk)
+{
+	XMLDocument xmlDoc;
+
+	
+
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
+	return vektor_stringu;
+}
+std::vector<std::string> nacteni_textu_konec_kola(int jazyk)
+{
+	XMLDocument xmlDoc;
+
+	
+
+	xmlDoc.LoadFile("Preklad.xml");
+
+	XMLNode* root = xmlDoc.FirstChild();
+	XMLElement* base = root->FirstChildElement("zaklad");
+
+	XMLElement* profil = base->FirstChildElement("profil");
+	profil->QueryIntText(&profil_stringu);
+
+	XMLElement* jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 0)
+		jazyk = root->FirstChildElement("CZ");
+	if (v_jazyk == 1)
+		jazyk = root->FirstChildElement("EN");
+
+	XMLElement* text = jazyk->FirstChildElement("Menu");
+	for (int i = 0; i < profil_stringu; i++)
+	{
+		const char* data = nullptr;
+		data = text->Attribute("profil");
+		std::string sdata = data;
+		vektor_stringu.push_back(sdata);
+		text = text->NextSiblingElement("Menu");
+	}
 	return vektor_stringu;
 }

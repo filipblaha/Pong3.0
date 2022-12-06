@@ -9,93 +9,93 @@
 		<konec_kola>10</konec_kola>
 	</zaklad>
     <CZ>
-		<p0>Vyber si svuj profil</p0>
-		<p0>Profil 1</p0>
-		<p0>Profil 2</p0>
-		<p0>Profil 3</p0>
-		<p0>Smazat pokrok</p0>
-		<p0>Opravdu chcete smazat pokrok?</p0>
-		<p0>[ENTER]</p0>
-		<p0>Zadej nazev profilu</p0>
-		<p1>Herni mody</p1>
-		<p1>Vzhled plosiny</p1>
-		<p1>Nastaveni</p1>
-		<p1>verze </p1>
-		<p2>HERNI MODY</p2>
-		<p2>Klasik</p2>
-		<p2>Rogue like - zatim nefunkcni</p2>
-		<p2>Stejne tvary - zatim nefunkcni</p2>
-		<p2>Bloky padaji</p2>
-		<p3>VZHLED PLOSINY</p3>
-		<p3>Odemkne se na urovni  </p3>
-		<p4>NASTAVENI</p4>
-		<p4>Ovladani</p4>
-		<p4>Jazyk</p4>
-		<p4>Cesky</p4>
-		<p4>Anglicky</p4>
-		<p5>OVLADANI</p5>
-		<p5>Ovladani v menu</p5>
-		<p5>Ovladani ve hre</p5>
-		<p5>Enter</p5>
-		<p5>Mezernik</p5>
-		<p5>Pouzit schopnost</p5>
-		<p5>Pohyb - vlevo</p5>
-		<p5>Pohyb - vpravo</p5>
-		<p5>Pauza</p5>
-		<p5>Zkus to znovu.</p5>
-		<p5>VYHRAL JSI!</p5>
-		<p6>Restart[MEZERNIK]</p6>
-		<p6>Menu[Q]</p6>
-		<p6>NEJLEPSI CAS: </p6>
-		<p6>Dosazeny cas: </p6>
-		<p6>Bloku zbylo: </p6>
-		<p6>Uroven </p6>
-		<p6>Bloku zniceno: </p6>
-		<p6>NEJVICE ZNICENYCH BLOKU: </p6>
+		<Menu profil="Vyber si svuj profil"/>
+		<Menu profil="Profil 1"/>
+		<Menu profil="Profil 2"/>
+		<Menu profil="Profil 3"/>
+		<Menu profil="Smazat pokrok"/>
+		<Menu profil="Opravdu chcete smazat pokrok?"/>
+		<Menu profil="[ENTER]"/>
+		<Menu profil="Zadej nazev profilu"/>
+		<Menu hlavni="Herni mody"/>
+		<Menu hlavni="Vzhled plosiny"/>
+		<Menu hlavni="Nastaveni"/>
+		<Menu hlavni="verze "/>
+		<Menu herni_mody="HERNI MODY"/>
+		<Menu herni_mody="Klasik"/>
+		<Menu herni_mody="Rogue like - zatim nefunkcni"/>
+		<Menu herni_mody="Stejne tvary - zatim nefunkcni"/>
+		<Menu herni_mody="Bloky padaji"/>
+		<Menu vzhled_plosiny="VZHLED PLOSINY"/>
+		<Menu vzhled_plosiny="Odemkne se na urovni  "/>
+		<Menu nastaveni="NASTAVENI"/>
+		<Menu nastaveni="Ovladani"/>
+		<Menu nastaveni="Jazyk"/>
+		<Menu nastaveni="Cesky"/>
+		<Menu nastaveni="Anglicky"/>
+		<Menu ovladani="OVLADANI"/>
+		<Menu ovladani="Ovladani v menu"/>
+		<Menu ovladani="Ovladani ve hre"/>
+		<Menu ovladani="Enter"/>
+		<Menu ovladani="Mezernik"/>
+		<Menu ovladani="Pouzit schopnost"/>
+		<Menu ovladani="Pohyb - vlevo"/>
+		<Menu ovladani="Pohyb - vpravo"/>
+		<Menu ovladani="Pauza"/>
+		<Menu ovladani="Zkus to znovu."/>
+		<Menu ovladani="VYHRAL JSI!"/>
+		<Menu konec="Restart[MEZERNIK]"/>
+		<Menu konec="Menu[Q]"/>
+		<Menu konec="NEJLEPSI CAS: "/>
+		<Menu konec="Dosazeny cas: "/>
+		<Menu konec="Bloku zbylo: "/>
+		<Menu konec="Uroven "/>
+		<Menu konec="Bloku zniceno: "/>
+		<Menu konec="NEJVICE ZNICENYCH BLOKU: "/>
     </CZ>
 	<EN>
-		<p0>Choose your profile</p0>
-		<p0>Profile 1</p0>
-		<p0>Profile 2</p0>
-		<p0>Profile 3</p0>
-		<p0>Delete progress</p0>
-		<p0>Do you want to delete progress?</p0>
-		<p0>[ENTER]</p0>
-		<p0>Enter a profile name</p0>
-		<p1>Game modes</p1>
-		<p1>Skins</p1>
-		<p1>Settings</p1>
-		<p1>version </p1>
-		<p2>GAME MODES</p2>
-		<p2>Classic</p2>
-		<p2>Rogue like - zatim nefunkcni</p2>
-		<p2>Hit the same color - zatim nefunkcni</p2>
-		<p2>Falling blocks</p2>
-		<p3>SKINS</p3>
-		<p3>Unlocks after level </p3>
-		<p4>SETTINGS</p4>
-		<p4>Controls</p4>
-		<p4>Language</p4>
-		<p4>ENech</p4>
-		<p4>English</p4>
-		<p5>CONTROLS</p5>
-		<p5>Menu controls</p5>
-		<p5>In-game controls</p5>
-		<p5>Enter</p5>
-		<p5>Spacebar</p5>
-		<p5>Use ability</p5>
-		<p5>Movement - left</p5>
-		<p5>Movement - right</p5>
-		<p5>Pause</p5>
-		<p5>Try again.</p5>
-		<p5>YOU'VE WON!</p5>
-		<p6>Restart [SPACEBAR]</p6>
-		<p6>Menu [Q]</p6>
-		<p6>BEST TIME: </p6>
-		<p6>Your time: </p6>
-		<p6>Blocks left: </p6>
-		<p6>Level </p6>
-		<p6>Blocks destroyed: </p6>
-		<p6>HIGHSCORE: </p6>
+		<Menu profil="Choose your profile"/>
+		<Menu profil="Profile 1"/>
+		<Menu profil="Profile 2"/>
+		<Menu profil="Profile 3"/>
+		<Menu profil="Delete progress"/>
+		<Menu profil="Do you want to delete progress?"/>
+		<Menu profil="[ENTER]"/>
+		<Menu profil="Enter a profile name"/>
+		<Menu hlavni="Game modes"/>
+		<Menu hlavni="Skins"/>
+		<Menu hlavni="Settings"/>
+		<Menu hlavni="version "/>
+		<Menu herni_mody="GAME MODES"/>
+		<Menu herni_mody="Classic"/>
+		<Menu herni_mody="Rogue like - zatim nefunkcni"/>
+		<Menu herni_mody="Hit the same color - zatim nefunkcni"/>
+		<Menu herni_mody="Falling blocks"/>
+		<Menu vzhled_plosiny="SKINS"/>
+		<Menu vzhled_plosiny="Unlocks after level "/>
+		<Menu nastaveni="SETTINGS"/>
+		<Menu nastaveni="Controls"/>
+		<Menu nastaveni="Language"/>
+		<Menu nastaveni="Czech"/>
+		<Menu nastaveni="English"/>
+		<Menu ovladani="CONTROLS"/>
+		<Menu ovladani="Menu controls"/>
+		<Menu ovladani="In-game controls"/>
+		<Menu ovladani="Enter"/>
+		<Menu ovladani="Spacebar"/>
+		<Menu ovladani="Use ability"/>
+		<Menu ovladani="Movement - left"/>
+		<Menu ovladani="Movement - right"/>
+		<Menu ovladani="Pause"/>
+		<Menu ovladani="Try again."/>
+		<Menu ovladani="YOU'VE WON!"/>
+		<Menu konec="Restart [SPACEBAR]"/>
+		<Menu konec="Menu [Q]"/>
+		<Menu konec="BEST TIME: "/>
+		<Menu konec="Your time: "/>
+		<Menu konec="Blocks left: "/>
+		<Menu konec="Level "/>
+		<Menu konec="Blocks destroyed: "/>
+		<Menu konec="HIGHSCORE: "/>
 	</EN>
 </root>

@@ -1,44 +1,13 @@
-<root>
-    <Zakladni>
-        <Pocet_profilu>3</Pocet_profilu>
-        <Nazev_profilu>
-            <Pismeno>102</Pismeno>
-            <Pismeno>115</Pismeno>
-            <Pismeno>97</Pismeno>
-        </Nazev_profilu>
-        <Nazev_profilu>
-            <Pismeno>97</Pismeno>
-            <Pismeno>103</Pismeno>
-            <Pismeno>104</Pismeno>
-            <Pismeno>106</Pismeno>
-        </Nazev_profilu>
-        <Nazev_profilu>
-            <Pismeno>115</Pismeno>
-            <Pismeno>108</Pismeno>
-            <Pismeno>106</Pismeno>
-        </Nazev_profilu>
-    </Zakladni>
-    <Profil>
-        <Hodnota>1</Hodnota>
-        <Hodnota>5</Hodnota>
-        <Hodnota>3</Hodnota>
-        <Hodnota>66</Hodnota>
-        <Hodnota>5</Hodnota>
-    </Profil>
-    <Profil>
-        <Hodnota>8</Hodnota>
-        <Hodnota>4</Hodnota>
-        <Hodnota>6</Hodnota>
-        <Hodnota>11</Hodnota>
-        <Hodnota>4</Hodnota>
-        <Hodnota>18</Hodnota>
-    </Profil>
-    <Profil>
-        <Hodnota>8</Hodnota>
-        <Hodnota>2</Hodnota>
-        <Hodnota>6</Hodnota>
-        <Hodnota>11</Hodnota>
-        <Hodnota>5</Hodnota>
-        <Hodnota>11</Hodnota>
-    </Profil>
-</root>
+<Profil>
+    <pouzit>true</pouzit>
+    <jazyk>false</jazyk>
+    <plosina_skin>0</plosina_skin>
+    <highscore_cas>0</highscore_cas>
+    <highscore_znicenych_bloku>0</highscore_znicenych_bloku>
+    <level>0</level>
+    <exp>0</exp>
+    <pohyb_vlevo>65</pohyb_vlevo>
+    <pohyb_vpravo>68</pohyb_vpravo>
+    <pouziti_schopnosti>32</pouziti_schopnosti>
+    <pauza>27</pauza>
+</Profil>

@@ -132,7 +132,6 @@
     <ClCompile Include="Menu_profil.cpp" />
     <ClCompile Include="Pong 3.0.cpp" />
     <ClCompile Include="Preklad.cpp" />
-    <ClCompile Include="profil.cpp" />
     <ClCompile Include="Profily.cpp" />
     <ClCompile Include="Plosina.cpp" />
     <ClCompile Include="Commands.cpp" />

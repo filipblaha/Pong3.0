@@ -1,10 +1,7 @@
 #include "Menu_profil.h"
-#include "Commands.h"
-
 
 void  Menu_profil::vykresleni_profil()
 {
-	Commands set;
 	///////    Ramecek   ///////
 	set.setCursorPosition(8, 7);
 	for (int i = 0; i < 24; i++)
@@ -79,7 +76,7 @@ void  Menu_profil::vykresleni_profil()
 
 	///////    Text   ///////
 
-	/*set.setCursorPosition(10, 5);
+	set.setCursorPosition(10, 5);
 	if (!jazyk)
 		std::wcout << vyber_profiluCZ;
 	if (jazyk)
@@ -110,5 +107,5 @@ void  Menu_profil::vykresleni_profil()
 	{
 		set.setCursorPosition(17, 17);
 		std::wcout << smazani_pokrokEN;
-	}*/
+	}
 }
